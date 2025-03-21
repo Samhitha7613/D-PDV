@@ -1,0 +1,22 @@
+{
+  "canisters": {
+    "blockchain_backend": {
+      "type": "custom",
+      "candid": "src/Blockchain_backend/Blockchain_backend.did",
+      "build": "./build_backend.sh",
+      "wasm": "src/Blockchain_backend/target/wasm32-unknown-unknown/release/blockchain_backend.wasm"
+    },
+    "Blockchain_frontend": {
+      "type": "assets",
+      "source": ["src/Blockchain_frontend"]
+    }
+  },
+  "dfx": "0.15.0",
+  "networks": {
+    "local": {
+      "bind": "127.0.0.1:8000",
+      "type": "ephemeral"
+    }
+  }
+}
+

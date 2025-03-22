@@ -1,0 +1,7 @@
+// /Blockchain/src/Blockchain_backend/Blockchain_backend.did
+
+service : {
+  "store_data": (text) -> (text);
+  "get_data": () -> (text);
+};
+
